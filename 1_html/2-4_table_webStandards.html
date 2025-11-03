@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테이블_웹표준</title>
+</head>
+
+<body>
+    <h2>웹 표준 표 만들기</h2>
+    <table border="1" style="width: 50%;">
+        <!--  -->
+        <caption>태블릿PC와 스마트폰 판매 현황표</caption>
+        <!-- caption은 table의 제목 -->
+        <colgroup>
+            <!-- colgroup은 col의 갯수를 알기 쉽도록 작성, 작성 위치는 반드시 caption 다음에 -->
+            <col style="width: 50%;">
+            <col style="width: 25%;">
+            <col style="width: 25%;">
+        </colgroup>
+        <!-- 시각장애인을 위해서 1.헤드 2.결론 3.본문 순으로 마크업 -->
+        <thead>
+            <tr>
+                <th>구분</th>
+                <th scope="col">태블릿PC</th>
+                <th scope="col">스마트폰</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th scope="row">총 판매수</th>
+                <td>5만원대</td>
+                <td>16만원대</td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <th scope="row">상반기 판매수</th>
+                <td>2만원대</td>
+                <td>5만원대</td>
+            </tr>
+            <tr>
+                <th scope="row">하반기 판매수</th>
+                <td>3만원대</td>
+                <td>11만원대</td>
+            </tr>
+        </tbody>
+
+    </table>
+</body>
+
+</html>

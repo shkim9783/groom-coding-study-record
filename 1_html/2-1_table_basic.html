@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테이블_기본</title>
+</head>
+
+<body>
+    <h1>테이블</h1>
+    <br>
+    <h2>1행 1열 표 만들기</h2>
+    <table border="1">
+        <!-- table은 표를 만드는 태그 -->
+        <!-- border는 table의 경계를 시각화하도록 임의로 설정 - 실제로는 css로 설정 -->
+        <!-- table의 크기는 내용의 크기에 따라 자동 설정 (단, 임의 설정 가능) -->
+        <!-- table을 작석할 때에는 1.행을 만들고, 그 안에 2.열을 만든다. -->
+        <tr>
+            <!-- tr(Table Row)은 table 안에 행을 만드는 태그 -->
+            <td>1행 1열</td>
+            <!-- td(Table Data)는 tr 안에 열을 만드는 태그 -->
+        </tr>
+    </table>
+    <br>
+    <h2>1행 2열 표 만들기</h2>
+    <table border="1">
+        <tr>
+            <td>1행 1열</td>
+            <td>1행 2열</td>
+        </tr>
+    </table>
+    <br>
+    <h2>2행 1열 표 만들기</h2>
+    <table border="1">
+        <tr>
+            <td>1행 1열</td>
+        </tr>
+        <tr>
+            <td>2행 1열</td>
+        </tr>
+    </table>
+    <br>
+    <h2>2행 2열 표 만들기</h2>
+    <table border="1">
+        <tr>
+            <td>1행 1열</td>
+            <td>1행 2열</td>
+        </tr>
+        <tr>
+            <td>2행 1열</td>
+            <td>2행 2열</td>
+        </tr>
+    </table>
+    <br>
+    <h2>3행 3열 표 만들기</h2>
+    <table border="1">
+        <tr>
+            <td>1행 1열</td>
+            <td>1행 2열</td>
+            <td>1행 3열</td>
+        </tr>
+        <tr>
+            <td>2행 1열</td>
+            <td>2행 2열</td>
+            <td>2행 3열</td>
+        </tr>
+        <tr>
+            <td>3행 1열</td>
+            <td>3행 2열</td>
+            <td>3행 3열</td>
+        </tr>
+    </table>
+    <br>
+    <h2>3행 3열 표 만들기 - 병합(확장)</h2>
+    <table border="1">
+        <tr>
+            <td colspan="2">1행 1열</td>
+            <!-- col(column)은 열, span은 1칸(*2)-->
+            <!-- 영역을 빼앗긴 td는 삭제 -->
+            <!-- <td>1행 2열</td> -->
+            <td>1행 3열</td>
+        </tr>
+        <tr>
+            <td>2행 1열</td>
+            <td>2행 2열</td>
+            <td rowspan="2">2행 3열</td>
+        </tr>
+        <tr>
+            <td>3행 1열</td>
+            <td>3행 2열</td>
+            <!-- <td>3행 3열</td> -->
+        </tr>
+    </table>
+    <br>
+    <table border="1">
+        <tr>
+            <td>1행 1열</td>
+            <td>1행 2열</td>
+            <td>1행 3열</td>
+            <td>1행 4열</td>
+            <td rowspan="4">1행 5열</td>
+        </tr>
+        <tr>
+            <td>2행 1열</td>
+            <td>2행 2열</td>
+            <td rowspan="3">2행 3열</td>
+            <td>2행 4열</td>
+            <!-- <td>2행 5열</td> -->
+        </tr>
+        <tr>
+            <td colspan="2">3행 1열</td>
+            <!-- <td>3행 2열</td> -->
+            <!-- <td>3행 3열</td> -->
+            <td>3행 4열</td>
+            <!-- <td>3행 5열</td> -->
+        </tr>
+        <tr>
+            <td>4행 1열</td>
+            <td>4행 2열</td>
+            <!-- <td>4행 3열</td> -->
+            <td>4행 4열</td>
+            <!-- <td>4행 5열</td> -->
+        </tr>
+        <tr>
+            <td>5행 1열</td>
+            <td>5행 2열</td>
+            <td>5행 3열</td>
+            <td>5행 4열</td>
+            <td>5행 5열</td>
+        </tr>
+    </table>
+</body>
+
+</html>
