@@ -1,0 +1,24 @@
+/* css 주석 처리 방법 */
+
+#header{
+    width: 1000px;
+    /* 가로(폭) - Zencoding 입력 권장 */
+    /* w+숫자+단위(기본: 픽셀)+탭 */
+    height: 200px;
+    /* 세로(폭) - Zencoding 입력 권장 */
+    /* h+숫자+단위(기본: 픽셀)+탭 */
+    background-color: #f0f;
+}
+
+#contentWrap {
+    width: 1000px;
+    height: 400px;
+    background-color: #ff0;
+}
+
+#footer{
+    width: 1000px;
+    height: 150px;
+    background-color: #0ff;
+}
+

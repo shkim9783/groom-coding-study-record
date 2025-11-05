@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>div+css</title>
+    <style>
+        body {
+            background-color: floralwhite;
+        }
+
+        li {
+            display: inline-block;
+            margin: 10px;
+        }
+
+        .contents {
+            display: inline-block;
+            width: 28%;
+            margin: 2%;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div>
+            <h6>상단(header) 영역</h6>
+            <h1><a href="">웹사이트 이름</a></h1>
+            <div>
+                <h3>주 메뉴</h3>
+                <ul>
+                    <li><a href="">회사소개</a></li>
+                    <li><a href="">사업영역</a></li>
+                    <li><a href="">브랜드 소개</a></li>
+                    <li><a href="">상품소개</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <!-- 시각적 구분을 위해 사용할 뿐, 실제 사용빈도는 매우 낮음 -->
+        <div>
+            <h6>콘텐츠 부분</h6>
+            <h2>콘텐츠 그룹(페이지) 제목</h2>
+            <div class="contents">
+                <h3>콘텐츠1의 제목</h3>
+                <p>콘텐츠1의 내용입니다. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam error nisi est maxime
+                    rerum! Magnam corrupti fugiat accusantium exercitationem totam, perferendis necessitatibus quia
+                    consectetur voluptatem quasi sed praesentium tempore modi!</p>
+            </div>
+            <div class="contents">
+                <h3>콘텐츠2의 제목</h3>
+                <p>콘텐츠1의 내용입니다. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam error nisi est maxime
+                    rerum! Magnam corrupti fugiat accusantium exercitationem totam, perferendis necessitatibus quia
+                    consectetur voluptatem quasi sed praesentium tempore modi!</p>
+            </div>
+            <div class="contents">
+                <h3>콘텐츠3의 제목</h3>
+                <p>콘텐츠1의 내용입니다. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam error nisi est maxime
+                    rerum! Magnam corrupti fugiat accusantium exercitationem totam, perferendis necessitatibus quia
+                    consectetur voluptatem quasi sed praesentium tempore modi!</p>
+            </div>
+        </div>
+        <hr>
+        <!-- 시각적 구분을 위해 사용할 뿐, 실제 사용빈도는 매우 낮음 -->
+        <div>
+            <h6>하단(footer) 부분</h6>
+            <h2><a href="">웹 사이트 이름</a></h2>
+            <div>
+                <h3>기업정보 메뉴</h3>
+                <ul>
+                    <li><a href="">사업자 정보</a></li>
+                    <li><a href="">개인정보 보호정책</a></li>
+                    <li><a href="">협력업체</a></li>
+                </ul>
+            </div>
+            <div>
+                <address>주소</address>
+                <small>저작권</small>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

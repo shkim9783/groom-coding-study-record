@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>form_label</title>
+</head>
+
+<body>
+    <h1>form 요소</h1>
+    <br>
+    <h2>label 요소</h2>
+    <ul>
+        <li>label 요소는 input 요소 등 form 요소의 이름표</li>
+        <li>input 요소 등을 제어하기 위해 사용</li>
+    </ul>
+    <br>
+    <h2>label 요소 입력 방법</h2>
+    <ol>
+        <li>label 태그로 input 태그를 감싸거나</li>
+        <li>input 태그의 id 속성과 label 태그의 for 속성의 <strong>속성값을 동일하게 설정</strong>하여 연결 - 권장</li>
+    </ol>
+
+    <form action="">
+        <fieldset>
+            <legend>회원가입</legend>
+            <ol>
+                <li>label 태그로 input 태그를 감싸기
+                    <p> <label for="">이름: <input type="text" /></label> </p>
+                </li>
+                <li>input 태그의 id 속성과 label 태그의 for 속성의 <strong>속성값을 동일하게 설정</strong>하여 연결
+                    <table>
+                        <tr>
+                            <th scope="row"><label for="identity">아이디</label></th>
+                            <td><input id="identity" type="text" /></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"> <label for="password">비밀번호</label></th>
+                            <td><input type="text" id="password" /></td>
+                        </tr>
+                    </table>
+
+                </li>
+            </ol>
+        </fieldset>
+    </form>
+</body>
+
+</html>

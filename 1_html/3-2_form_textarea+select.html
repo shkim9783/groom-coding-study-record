@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form_textarea+select</title>
+</head>
+
+<body>
+    <h1>form 요소</h1>
+    <h2>textarea 요소 & select 요소</h2>
+    <form action="">
+        <fieldset>
+            <legend>여러 줄 글상자와 목록 상자</legend>
+            <p>답글 <br>
+                <textarea cols="40" rows="5"></textarea>
+            </p>
+            <!-- cols는 가로 폭(글자수기준), row는 보이는 높이(내용이 높이를 초과하면 스크롤바 생성) -->
+            <p>과목선택
+                <select name="subject" id="label태그와_연결">
+                    <!-- select 안에 option(개별항목) 설정 -->
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="javascript">Javascriprt</option>
+                </select>
+            </p>
+
+            <p>개강일
+                <select name="open" id="label태그와_연결">
+                    <optgroup label="10월">
+                        <!-- optgroup은 option을 묶는 용도로 개별선택 불가 -->
+                        <option value="1st">10월 28일</option>
+                        <option value="2nd">10월 29일</option>
+                        <option value="3rd">10월 30일</option>
+                    </optgroup>
+                    <optgroup label="11월">
+                        <option value="4th">11월 01일</option>
+                        <option value="5th">11월 02일</option>
+                        <option value="6th">11월 03일</option>
+                    </optgroup>
+                </select>
+            </p>
+            <input type="submit" value="전송">
+            <input type="reset" value="취소">
+        </fieldset>
+    </form>
+</body>
+
+</html>

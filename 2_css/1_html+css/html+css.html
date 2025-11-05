@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html+css_입력방법</title>
+    <style>
+        h3 {
+            color: blue;
+        }
+    </style>
+    <link rel="stylesheet" href="css/link.css">
+</head>
+
+<body>
+    <h1>html+css 입력 방법</h1>
+    <br>
+    <h2>css 형식</h2>
+    <p>선택자 {속성: 속성값;}<br> - 객체{무엇을: 어떻게;}</p>
+    <br>
+    <h2>css를 html에 적용시키는 방법</h2>
+    <h3 style="color:green;">1. Inline Style Sheet</h3>
+    <ul>
+        <li>html 문서 태그 안에 style 속성을 직접 입력</li>
+        <li>css 입력 내용이 매우 적을 때 사용</li>
+        <li>우선 순위가 놆아 테스트 목적으로 주로 사용</li>
+    </ul>
+    <h3>2. Internal Style Sheet</h3>
+    <ul>
+        <li>html 문서의 head 영역 안에 style 태그를 작성하여 입력</li>
+        <li>간단한 문서에 주로 사용</li>
+    </ul>
+    <h3 class="link">3. Linking Style Sheet</h3>
+    <ul>
+        <li>별도의 css 파일을 작성하여 html 문서와 연결</li>
+        <li>head 영역 안에 link 태그를 입력한 후 link 태그 안에 href, rel 속성을 지정</li>
+        <li>가장 일반적인 방법</li>
+    </ul>
+    <br>
+    <h2>선택자 유형</h2>
+    <ol>
+        <li>tag(type) 선택자 - '태그명'을 그대로 입력</li>
+        <li>class 선택자 - '.' + 클래스명 입력(클래스명 앞에 점)</li>
+        <li id="selector">id 선택자 - '#'+'아이디명'을 입력 (아이디명 앞에 샵)</li>
+        <li>복합 선택자</li>
+    </ol>
+    <p class="link star">선택자는 구체적일수록 우선순위가 높다</p>
+</body>
+
+</html>
