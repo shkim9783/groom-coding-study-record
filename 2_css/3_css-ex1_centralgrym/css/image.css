@@ -1,0 +1,305 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+a{text-decoration: none;}
+
+#wrap{
+    width: auto;
+    /* 기본 설정이므로 생략 가능 */
+    /* 최상위 요소는 100% 보다 auto 권장 */
+    background-image: url(../image/00_line.png);
+    /* 배경이미지의 기본 설정은 (패턴처럼) 반복 */
+    background-repeat: repeat-x;
+    /* 배경이미지-반복: 가로만(가본 설정은 가로세로 반복) */
+}
+
+#header{
+    width: 1000px;
+    height: 120px;
+    /* #header를 #wrap의 중앙에 정렬 */
+    margin: 0 auto;
+    /* 블록요소의 가로 중앙 정렬(auto는 균등 분할) */
+    /* margin값을 1개 입력하면 4방향 공통 */
+    /* margin값을 2개 이상 입력하면 위쪽부터 시계방향(미입력값은 대칭과 동일) */
+}
+#header > div{
+    float: left;
+}
+
+#header_left{
+    width: 400px;
+    height: 120px;
+}
+#left_top{
+    height: 60px;
+}
+#left_lnb{
+    height: 60px;
+}
+#left_lnb > ul{
+    height: 100%;
+}
+#left_lnb > ul > li{
+    width: calc(100%/5);
+    float: left;
+    /* border: 1px solid #ccc; */
+    height: 100%;
+    background-image: url(../image/01_menu_left.jpg);
+}
+
+#left_lnb > ul > li:nth-child(1){
+    background-position: 0 0;
+}
+#left_lnb > ul > li:nth-child(1):hover{
+    background-position: 0 -60px;
+}
+#left_lnb > ul > li:nth-child(2){
+    background-position: -80px 0;
+}
+#left_lnb > ul > li:nth-child(2):hover{
+    background-position: -80px -60px;
+}
+#left_lnb > ul > li:nth-child(3){
+    background-position: -160px 0;
+}
+#left_lnb > ul > li:nth-child(3):hover{
+    background-position: -160px -60px;
+}
+#left_lnb > ul > li:nth-child(4){
+    background-position: -240px 0;
+}
+#left_lnb > ul > li:nth-child(4):hover{
+    background-position: -240px -60px;
+}
+#left_lnb > ul > li:nth-child(5){
+    background-position: -320px 0;
+}
+#left_lnb > ul > li:nth-child(5):hover{
+    background-position: -320px -60px;
+}
+
+
+#left_lnb > ul > li > a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+#logo{
+    width: 204px;
+    height: 120px;
+    /* background-image: url(../image/02_top_logo-1.jpg); */
+    background-image: url(../image/02_top_logo.jpg);
+    background-position: 0 0;
+}
+#logo:hover{
+    /* background-image: url(../image/02_top_logo-hover.jpg); */
+    background-position: 0 -120px;
+}
+/*
+사용자 동작에 반응하는 가상 클래스 선택자
+     - 선택자의 속성은 그대로, 추가설정만 추가로 적용
+
+선택자:link - 하이퍼링크 속성이 적용된 요소의 스타일을 지정
+선택자:visited - link 요소를 클릭하여 URL을 방문하고 돌아왔을때의 스타일을 지정
+선택자:hover - 선택자에 마우스를 올려놓았을때 스타일을 지정(PC 웹에서 가장 많이 사용)
+선택자:focus - (탭 키 등으로) 선택자를 활성화했을 때의 스타일을 지정
+서택자: active - 선택자를 키 다운(누르고 있을 때)한 상태의 스타일을 지정
+*/
+#logo > h1{
+    width: 100%;
+    height: 100%;
+}
+#logo > h1 > a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    text-indent: -9999px;
+    /* 글자의 시각적인 위치만 브라우저 왼쪽으로 이동(논리적인 위치는 그대로) */
+}
+
+#header_right{
+    width: 396px;
+    height: 120px;
+}
+#right_top{
+    height: 60px;
+}
+#gnb{
+    float: right;
+    width: 240px;
+    height: 20px;
+    border-left: 2px solid #0cf;
+    margin-top: 10px;
+}
+#gnb > ul {
+    height: 100%;
+}
+#gnb > ul > li{
+    float: left;
+    width: calc(100%/4);
+    height: 100%;
+    /* border: 1px solid #ccc; */
+    border-right: 2px solid #0cf;
+    text-align: center;
+    line-height: 20px;
+    /* 행간 - text가 1행일 때 line-height를 height와 동일하게 설정하면 세로 중앙 정렬 */
+    /* height가 없으면 height 역할도 수행 */
+}
+#gnb > ul > li > a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    font-size: 12px;
+    color: #0cf
+}
+
+#right_lnb{
+    height: 60px;
+}
+#right_lnb > ul{
+    height: 100%;
+}
+#right_lnb > ul > li{
+    float: left;
+    width: calc(100%/6);
+    height: 100%;
+    /* border: 1px solid #ccc; */
+    background-image: url(../image/03_menu_right.jpg);
+}
+#right_lnb > ul > li:nth-child(1){
+    background-position: 0 0;
+}
+#right_lnb > ul > li:nth-child(1):hover{
+    background-position: 0 -60px;
+}
+#right_lnb > ul > li:nth-child(2){
+    background-position: -66px 0;
+}
+#right_lnb > ul > li:nth-child(2):hover{
+    background-position: -66px -60px;
+}
+#right_lnb > ul > li:nth-child(3){
+    background-position: calc(-66px*2) 0;
+}
+#right_lnb > ul > li:nth-child(3):hover{
+    background-position: calc(-66px*2) -60px;
+}
+#right_lnb > ul > li:nth-child(4){
+    background-position: calc(-66px*3) 0;
+}
+#right_lnb > ul > li:nth-child(4):hover{
+    background-position: calc(-66px*3) -60px;
+}
+#right_lnb > ul > li:nth-child(5){
+    background-position: calc(-66px*4) 0;
+}
+#right_lnb > ul > li:nth-child(5):hover{
+    background-position: calc(-66px*4) -60px;
+}
+#right_lnb > ul > li:nth-child(6){
+    background-position: calc(-66px*5) 0;
+}
+#right_lnb > ul > li:nth-child(6):hover{
+    background-position: calc(-66px*5) -60px;
+}
+
+#right_lnb > ul > li > a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+#contentWrap{
+    width: 1000px;
+    /* height: 667px; */
+    margin: 0 auto;
+    
+}
+
+
+#footer{
+    width: 100%;
+    height: 100px;
+    background-image: url(../image/99_bottom_line.png);
+    background-repeat: repeat-x;
+    margin: 0 auto;
+}
+
+#fnb{
+    width: 1000px;
+    height: 50px;
+    margin: 0 auto;
+}
+#fnb > ul{
+    width: 100%;
+    height: 100%;
+}
+#fnb > ul > li{
+    float: left;
+    width: calc(100%/5);
+    height: 100%;
+    /* border: 1px solid #ccc; */
+    background-image: url(../image/99_bottom_logo.jpg);
+    
+}
+#fnb > ul > li:nth-child(1){
+    background-position: 0 0;
+}
+#fnb > ul > li:nth-child(1):hover{
+    background-position: 0 -50px;
+}
+#fnb > ul > li:nth-child(2){
+    background-position: -200px 0;
+}
+#fnb > ul > li:nth-child(2):hover{
+    background-position: -200px -50px;
+}
+#fnb > ul > li:nth-child(3){
+    background-position: -400px 0;
+}
+#fnb > ul > li:nth-child(3):hover{
+    background-position: -400px -50px;
+}
+#fnb > ul > li:nth-child(4){
+    background-position: -600px 0;
+}
+#fnb > ul > li:nth-child(4):hover{
+    background-position: -600px -50px;
+}
+#fnb > ul > li:nth-child(5){
+    background-position: -800px 0;
+}
+#fnb > ul > li:nth-child(5):hover{
+    background-position: -800px -50px;
+}
+
+#fnb > ul > li > a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+#address{
+    width: 100%;
+    height: 50px;
+    font-size: 12px;
+    text-align: center;
+    color:#0cf;
+}
+#address a{
+    color:#0cf;
+}
+
+address{
+    font-style: normal;
+}
+
+small{
+    font-size: 100%;
+    /* small 태그의 기본 설정은 smaller(약 85%) */
+}

@@ -1,0 +1,161 @@
+/* 
+[복합 선택자]
+
+1. A B = A의 자손(자녀, 손자녀, 증손, 고손)인 B등
+예) body div = body 태그 하위의 모든 div
+
+2. A > B = A의 자녀인 B들
+예) body > div = body 태그의 자녀요소인 div, 즉 #wrap만 해당
+
+3. A ~ B = A의 동생인 B
+예) #header ~ div = #contentwrap과 #footer가 해당
+
+4. A + B = A의 바로 다음 동생인 B
+예) #header + div = #contentwrap만 해당
+
+5. A, B = A와 B = 두 개 이상의 선택자를 호출할 때에는 쉼표(,)로 구분
+
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+#header{
+    width: 1000px;
+    height: 120px;
+    background-color: #ff0;
+}
+
+#header > div {
+    float: left;
+}
+
+#header_left{
+    width: 400px;
+    height: 120px;
+    /* float: left; */
+    background-color: #f70;
+}
+#left_top{
+    height: 60px;
+    background-color: #f80;
+}
+#left_lnb{
+    height: 60px;
+    background-color: #f90;
+}
+#left_lnb > ul > li {
+    float: left;
+    /* margin: 0 10px; */
+    width: 80px;
+    height: 60px;
+    /* border-width: 1px;
+    border-style: solid;
+    border-color: blue; */
+    border: 1px solid blue;
+    /* 외곽선: 두께 종류 색상(생략하면 글자색 */
+}
+#left_lnb > ul > li > a {
+    display: block;
+    /* 인라인 요소는 크기 설정 불가 */
+    /* 크기 설정을 위해 블록요소로 변환 */
+    width: 100%;
+    height: 100%;
+}
+
+#logo{
+    width: 204px;
+    height: 120px;
+    /* float: left; */
+}
+#logo h1{
+    display: block;
+    width: 100%;
+    height: 100%;
+    /* 부모요소인 #logo 기준 */
+}
+#logo h1 a{
+    display: block;
+    width: 100%; /* 블록요소의 기본 설정(생략 가능) */
+    height: 100%;
+}
+
+
+#header_right{
+    width: 396px;
+    height: 120px;
+    /* float: left; */
+    background-color: #f70;
+}
+#right_top{
+    height: 60px;
+    background-color: #f80;
+}
+#right_top > #gnb{
+    float: right;
+}
+#right_top > #gnb > li{
+    float: left;
+    border: 1px solid blue;
+    height: 24px;
+}
+
+#right_lnb{
+    height: 60px;
+    background-color: #f90;
+}
+#right_lnb > ul > li{
+    float: left;
+    width: calc(100%/6);
+    height: 60px;
+    border: 1px solid blue;
+}
+#right_lnb > ul > li > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+
+#contentWrap{
+    width: 1000px;
+    height: 667px;
+    background-color: #0b0;
+}
+
+#footer{
+    width: 1000px;
+    height: 100px;
+    background-color: #07f;
+}
+
+#fnb{
+    width: 1000px;
+    height: 50px;
+    margin: 0 auto;
+}
+#fnb > ul > li{
+    float: left;
+    width: calc(100%/5);
+    border: 1px solid blue;
+    height: 50px;
+}
+#fnb > ul > li > a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#address{
+    width: 1000px;
+    height: 50px;
+    margin: 0 auto;
+    background-color: #00f;
+}
