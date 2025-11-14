@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    float: left;
+    /* Z값을 띄우서 왼쪽으로 이어붙이기 */
+    /* 가로 배열하려는 모든 블록요소에 지정 */
+    /* 직계 상위 요소에 높이 지정 필수 */
+    list-style: none;
+    /* 숫자, 점 등 목록의 장식 제거 */
+    margin: 0 20px;
+}
+
+#header{
+    width: 1000px;
+    height: 200px;
+    background-color: #ff0;
+}
+#header > #top{
+    width: 1000px;
+    height: 150px;
+    background-color: #fb0;
+}
+#header > #top > #logo{
+    width: 300px;
+    height: 150px;
+    float: left;
+}
+#header > #top > #right{
+    width: 700px;
+    height: 150px;
+    float: left;
+    background-color: #fc0;
+}
+#header > #top > #right > #gnb{
+    height: 30px;
+    background-color: #f70;
+    float: right;
+}
+
+#header > #lnb{
+    width: 1000px;
+    height: 50px;
+    background-color: #f90;
+}
+
+#contentwrap{
+    width: 1000px;
+    height: 400px;
+    background-color: #f0f;
+}
+#contentwrap > #main_banner{
+    width: 1000px;
+    height: 200px;
+    background-color: #f0b;
+}
+#contentwrap > #banner{
+    width: 1000px;
+    height: 100px;
+    background-color: #f0f;
+}
+#contentwrap > #best{
+    width: 1000px;
+    height: 100px;
+    background-color: #f08;
+}
+
+
+#footer{
+    width: 1000px;
+    height: 150px;
+    background-color: #0ff;
+}
+#footer > #bottom_logo{
+    width: 300px;
+    height: 150px;
+    background-color: #0bf;
+    float: left;
+}
+#footer > #bottom{
+    width: 700px;
+    height: 150px;
+    background-color: #0bb;
+    float: left;
+}
+#footer > #bottom > #fnb{
+    width: 700px;
+    height: 50px;
+}
+#footer > #bottom > #address{
+    width: 700px;
+    height: 100px;
+}
+
+/* 
+메뉴(Navigation Bar)의 이름(id/class)
+GNB(Global Navigation Bar) - 최상위 메뉴(회원강비메뉴 포함)
+LNB(Local Navigation Bar) - 주요 서비스 메뉴
+FNB(Footer Navigation Bar) - 푸터 영역에 있는 메뉴
+SNB(Side Navigation Bar) - 옆에 있는 메뉴
+*/

@@ -1,5 +1,15 @@
 /* css 주석 처리 방법 */
 
+*{
+    margin: 0;
+    padding: 0;   
+     box-sizing: border-box;
+}
+
+li{
+    list-style: none;
+}
+
 #header{
     width: 1000px;
     /* 가로(폭) - Zencoding 입력 권장 */
@@ -8,6 +18,39 @@
     /* 세로(폭) - Zencoding 입력 권장 */
     /* h+숫자+단위(기본: 픽셀)+탭 */
     background-color: #f0f;
+    /* display: inline-block; */
+}
+
+#header > #left_lnb{
+    width: 400px;
+    height: 200px;
+    background-color: #b0b;
+    float: left;
+    padding: 30px;
+   
+}
+#header > #left_lnb li{
+    float: left;
+    margin-left: 10px;
+}
+
+#header > #logo{
+    width: 200px;
+    height: 200px;
+    float: left;
+    background-color: #f0b;
+}
+#header > #right_lnb{
+    width: 400px;
+    height: 200px;
+    float: left;
+    background-color: #c0b;
+    padding: 30px;
+}
+
+#header > #right_lnb li{
+    float: left;
+        margin-left: 10px;
 }
 
 #contentWrap {
@@ -15,10 +58,42 @@
     height: 400px;
     background-color: #ff0;
 }
+#contentWrap > #contents{
+    width: 1000px;
+    height: 300px;
+    background-color: #fb0;;
+}
+#contentWrap > #banner{
+    width: 1000px;
+    height: 100px;
+    background-color: #bb0;
+}
+
 
 #footer{
     width: 1000px;
     height: 150px;
     background-color: #0ff;
+    /* font-size: 0; */
+    
+}
+
+#footer > #bottom_logo{
+    width: 300px;
+    height: 150px;
+    background-color: #0bb;
+    /* display: inline-block; */
+    float:left;
+}
+
+#footer > #address{
+    width: 700px;
+    height: 150px;
+    background-color: #0bf;
+    /* display: inline-block; */
+    float:left;
+    /* z값을 띄워서 왼쪽으로 이어붙이기 */
+    /* 가로 배열하려는 모든 블록요소에 지정 */
+    /* 직계 상위 요소에 높이 지정 필수 */
 }
 
