@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/css3_position.css">
+</head>
+
+<body>
+    <div id="wrap">
+        <header>
+            <h1>css3 속성</h1>
+        </header>
+
+        <section class="sec1">
+            <h2>position 속성</h2>
+            <article class="static">
+                <h3>static</h3>
+                <p>고정 위치(기본 속성)</p>
+                <ul class="note">
+                    <li>기본 속성이므로 별도로 설정하지 않음</li>
+                    <li class="point">다른 속성에서 기본 속성으로 되돌릴 때 사용</li>
+                </ul>
+            </article>
+            <article class="relative">
+                <h3>relative</h3>
+                <p>상대적인 위치</p>
+                <ul class="note">
+                    <li>Z값을 띄워놓은 상태 (Z값이 높아짐)</li>
+                    <li>top: left: right: bottom: 등 위치값 사용 가능</li>
+                    <li class="point">위치값의 기준은 처음 위치</li>
+                </ul>
+                <aside>
+                    <h4>하위 absolute</h4>
+                    <p class="point">직계 상위요소 중 position 속성을 가진 요소가 있으면 그 요소를 기준으로 삼음</p>
+                </aside>
+            </article>
+            <article class="absolute">
+                <h3>absolute</h3>
+                <p>절대적인 위치</p>
+                <ul class="note">
+                    <li>Z값을 띄워놓은 상태 (Z값이 높아짐)</li>
+                    <li>top: left: right: bottom: 등 위치값 사용 가능</li>
+                    <li class="point">위치값의 기준은 body태그 기준 <br>-단, right: bottom: 의 기준은 viewport</li>
+                    <li class="point">영역을 차지하지 않음(float과 비슷)</li>
+                </ul>
+            </article>
+            <article class="fixed">
+                <h3>fixed</h3>
+                <p>절대적인 위치</p>
+                <ul class="note">
+                    <li>Z값을 띄워놓은 상태 (Z값이 높아짐)</li>
+                    <li>top: left: right: bottom: 등 위치값 사용 가능</li>
+                    <li class="point">위치값의 기준은 Viewport 기준</li>
+                    <li class="point">영역을 차지하지 않음(float과 비슷)</li>
+                    <li class="point">스크롤값 고정 - Viewport의 위치가 고정이므로</li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="sec2">
+            <h2>position 속성 사용 예시</h2>
+            <nav class="border">
+                <h3>border를 이용한 메뉴 경계 표시</h3>
+                <ul>
+                    <li><a href="">로그인</a><span></span></li>
+                    <li><a href="">회원가입</a><span></span></li>
+                    <li><a href="">마이페이지</a><span></span></li>
+                    <li><a href="">장바구니</a><span></span></li>
+                    <li><a href="">주문배송</a></li>
+                </ul>
+            </nav>
+            <nav class="position">
+                <h3>position을 이용한 메뉴 경계 표시</h3>
+                <ul>
+                    <li><a href="">로그인</a><span></span></li>
+                    <li><a href="">회원가입</a><span></span></li>
+                    <li><a href="">마이페이지</a><span></span></li>
+                    <li><a href="">장바구니</a><span></span></li>
+                    <li><a href="">주문배송</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <footer></footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style: none;
+}
+
+/******** 배너모음 *********/
+
+h2{
+    height: 50px;
+}
+
+h2,aside{
+    width: 1110px;
+    margin: 0 auto;
+}
+
+h3{
+    height: 30px;
+}
+
+#bannerWrap{
+    width: 100%;
+    font-size: 0;
+}
+
+#bannerWrap li{
+    display: inline-block;
+    /* width: calc(100%/4); */
+    text-align: center;
+    background-color: #000;
+    margin-right: 10px;
+    overflow: hidden;
+}
+#bannerWrap li:last-child{
+    margin: 0;
+}
+
+#bannerWrap li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 40px;
+}
+
+#bannerWrap li a img{
+    vertical-align: top;
+}
+
+#bannerWrap > li > a{
+    transition: all 1s;
+}
+#bannerWrap > li > a:hover{
+    /* background-color: #000; */
+    opacity: 0.5;
+}
+
+
+#bannerWrap li:nth-child(1) a:hover{
+    transform: translate(50px, 50px);
+}
+
+#bannerWrap li:nth-child(2) a:hover{
+    transform: ro;
+}

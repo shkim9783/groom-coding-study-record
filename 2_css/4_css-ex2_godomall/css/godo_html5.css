@@ -1,0 +1,193 @@
+/******************* reset.css 브라우저 초기화 ********************/
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{list-style: none;}
+a:any-link{text-decoration: none; color:#000}
+img{vertical-align: top;}
+address{font-style: normal;}
+small{font-size: 100%;}
+
+
+
+/******************* 스타일 라이브러리 ********************/
+
+/*** margin ***/
+.mr10 {margin-right: 10px;}
+.mr16 {margin-right: 16px;}
+.mr17 {margin-right: 17px;}
+
+/*** padding ***/
+.pl10 {padding-left: 10px;}
+.pl15 {padding-left: 15px;}
+.pr10 {padding-right: 10px;}
+.pr15 {padding-right: 15px;}
+
+/*** border ***/
+.bdr1ddd {border-right: 1px solid #ddd;}
+.bdt1ddd {border-top: 1px solid #ddd;}
+.bdb1000 {border-bottom: 1px solid #000;}
+.bdb4000 {border-bottom: 4px solid #000;}
+
+
+/******************* common.css - header, footer, #lnb 등 모든 페이지에 공통으로 적용되는 스타일 ********************/
+#wrap{
+    width: auto;
+    min-width: 1110px;
+}
+
+.hidden{
+    /* 시각적으로 영역을 차지하지 않도록 */
+    float: left;
+    /* 시각적인 위치만 브라우저 바깥으로 이동 */
+    text-indent: -9999px;
+}
+
+
+/****** header 영역 ******/
+#header{
+    width: 1110px;
+    height: 52px;
+    margin: 40px auto;
+    font-size: 0;
+}
+#header h1{
+    width: 253px;
+    height: 52px;
+    display: inline-block;
+}
+#header h1 a{
+    display: block;
+}
+#header h1 a img{
+    display: block;
+}
+
+#header .headerRight{
+    width: 857px;
+    height: 52px;
+    display: inline-block;
+    text-align: right;
+    vertical-align: top;
+}
+#lnb{
+    width: 100%;
+    height: 40px;
+    /* margin: 0 auto; */
+}
+#lnb ul{
+    width: 1110px;
+    height: 100%;
+    margin: 0 auto;
+}
+#lnb > ul > li{
+    display: inline-block;
+    height: 100%;
+}
+#lnb > ul > li > a{
+    line-height: 40px;
+}
+
+#gnb{
+    font-size: 12px;
+}
+#gnb > ul > li{
+    display: inline-block;
+}
+#gnb > ul > li:first-child{
+    border-left: 1px solid #ddd;
+}
+
+/****** footer 영역 ******/
+#footer{
+    width: 1110px;
+    height: 150px;
+    margin: 0 auto;
+    font-size: 0;
+}
+
+#footer h2{
+    width: 282px;
+    height: 120px;
+    margin-top: 30px;
+    display: inline-block;
+}
+#footer h2 a{
+    display: block;
+}
+#footer h2 a img{
+    display: block;
+}
+
+#footer .footerRight{
+    width: 828px;
+    height: 150px;
+    display: inline-block;
+    padding-top: 10px;
+    vertical-align: top
+}
+#footer .footerRight #fnb{
+    width: 100%;
+    height: 30px;
+    font-size: 14px;
+}
+#footer .footerRight #fnb h3{
+    /* font-size: large; */
+}
+#footer .footerRight #fnb > ul > li{
+    display: inline-block;
+}
+
+#footer .footerRight #address{
+    width: 100%;
+    height: 120px;
+}
+#footer .footerRight #address address{
+    font-size: 12px;
+}
+#footer .footerRight #address small{
+    font-size: 12px;
+}
+
+
+/******************* 페이지별 .css - 페이지별 내용 ********************/
+#contentWrap{
+    width: 100%;
+}
+#contentWrap #mainBanner{
+    width: 100%;
+    height: 393px;
+    margin-bottom: 20px;
+}
+#contentWrap #mainBanner a{
+    margin: 0 auto;
+}
+
+#contentWrap #banner{
+    width: 1110px;
+    height: 130px;
+    padding-bottom: 20px;
+    margin: 0 auto;
+}
+#contentWrap #banner > ul{
+    font-size: 0;
+}
+#contentWrap #banner > ul > li{
+    display: inline-block;
+    width: calc(100% / 4);
+    text-align: center;
+}
+
+#contentWrap #best{
+    width: 1110px;
+    height: 334px;
+    padding-bottom: 30px;
+    margin: 0 auto;
+    font-size: 0;
+}
+#contentWrap #best > ul > li{
+    display: inline-block;
+    width: calc(100% / 4);
+    text-align: center;
+}

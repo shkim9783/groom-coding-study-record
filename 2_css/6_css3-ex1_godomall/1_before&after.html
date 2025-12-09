@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>(구조)가상클래스와 가상요소</title>
+  <link rel="stylesheet" href="css/css3-1_before&after.css">
+</head>
+
+<body>
+  <section class="sec">
+    <h2>(구조) 가상 클래스와 가상 요소</h2>
+    <article>
+      <h3>(구조) 가상 클래스 선택자</h3>
+      <p>구조 가상 클래스는 요소를 구체적으로 명명</p>
+      <ul class="child">
+        <li>선택자:nth-child(n) - 형제 요소 중 (n)번째, (n)은 모든 형제 요소, (숫자)번째</li>
+        <li>선택자:first-child - 형제 요소 중 맏이</li>
+        <li>선택자:last-child - 형제 요소 중 막내</li>
+      </ul>
+    </article>
+    <article>
+      <h3 class="point">가상 요소(인라인 요소) 선택자 before&after</h3>
+    </article>
+    <nav>
+      <h3>before를 사용해서 메뉴 경계 표시</h3>
+      <p>선택자::before는 선택자의 첫 번째 자녀요소를 가상으로 생성</p>
+      <ul class="before">
+        <li><a href="">로그인</a></li>
+        <li><a href="">회원가입</a></li>
+        <li><a href="">마이페이지</a></li>
+        <li><a href="">장바구니</a></li>
+        <li><a href="">주문/배송</a></li>
+      </ul>
+    </nav>
+    <nav>
+      <h3>after를 사용해서 메뉴 경계 표시</h3>
+      <p>선택자::before는 선택자의 마지막 자녀요소를 가상으로 생성</p>
+      </p>
+      <ul class="after">
+        <li><a href="">로그인</a></li>
+        <li><a href="">회원가입</a></li>
+        <li><a href="">마이페이지</a></li>
+        <li><a href="">장바구니</a></li>
+        <li><a href="">주문/배송</a></li>
+      </ul>
+    </nav>
+  </section>
+</body>
+
+</html>

@@ -1,0 +1,271 @@
+*{
+    margin:0;
+    padding:0;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+.hidden{
+    /* 시각적으로 영역을 차지하지 않도록 */
+    position: absolute;
+    /* 시각적인 위치만 브라우저 바깥으로 */
+    left: -9999px;
+}
+
+/* section 선택자, aside 선택자 사용 X */
+/* section의 class를 기준으로 선택자 운용 */
+
+/********** .liHover - 직계 하위 메뉴 펼침 *********/
+.liHover{
+    margin-top: 50px;
+    min-width: 1110px;
+}
+.liHover > h2{
+    height: 50px;
+    width: 1110px;
+    margin: 0 auto;
+}
+.liHover > nav{
+    width: 100%;
+    /* 생략가능하지만 주 메뉴는 position을 쓰는 경우가 많으므로 설정 권장 */
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #000;
+}
+.liHover > nav > ul{
+    /* nav의 중앙에 정렬 */
+    height: 40px;
+    width: 1110px;
+    margin: 0 auto;
+}
+.liHover > nav > ul > li{
+    float: left;
+    height: 100%;
+    position: relative;
+}
+.liHover > nav > ul > li > a{
+    height: 100%;
+    display: block;
+    line-height: 40px;
+    font-size: 16px;
+    color: #000;
+    padding-left: 15px;
+}
+
+.liHover > nav > ul > li > .sub{
+    position: absolute;
+    z-index: 1;
+    /* Z값 설정: 기본설정은 0 */
+    background-color: rgb(255,0,0,0.5);
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+.liHover > nav > ul > li:hover > .sub{
+    display: block;
+}
+.liHover > nav > ul > li > .sub > li {
+    list-style: none;
+}
+.liHover > nav > ul > li > .sub > li > a{
+    display: block;
+    line-height: 30px;
+    color: #fff;
+}
+
+.liHover > aside{
+    height: 393px;
+    border-bottom: 4px solid;
+    position: relative;
+}
+
+.liHover > aside >img{
+    /* aside의 중앙에 정렬 */
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+/********** .ulHover - 하위 메뉴 전체 펼침 *********/
+.ulHover{
+    margin-top: 50px;
+    min-width: 1110px;
+}
+.ulHover h2{
+    height: 50px;
+    width: 1110px;
+    margin: 0 auto;
+}
+.ulHover nav{
+    width: 100%;
+    /* 생략가능하지만 주 메뉴는 position을 쓰는 경우가 많으므로 설정 권장 */
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #000;
+}
+.ulHover nav ul{
+    /* nav의 중앙에 정렬 */
+    height: 40px;
+    width: 1110px;
+    margin: 0 auto;
+}
+.ulHover nav ul::after{
+    clear: both;
+}
+.ulHover nav ul li{
+    float: left;
+    /* height: 100%; */
+    position: relative;
+}
+
+.ulHover nav ul li a{
+    height: 100%;
+    display: block;
+    line-height: 40px;
+    font-size: 16px;
+    color: #000;
+    padding-left: 15px;
+}
+.ulHover nav ul li .sub{
+    position: absolute;
+    z-index: 1;
+    /* Z값 설정: 기본설정은 0 */
+    background-color: rgb(255,0,0,0.5);
+    width: 100%;
+    text-align: center;
+    display: none;
+    height: 120px;
+    clear: both;
+    transition:ease-in-out;
+}
+.ulHover nav ul li .sub li{
+    clear: both;
+    width: 100%;
+}
+.ulHover nav ul li .sub li a{
+    line-height: 30px;
+    padding:0;
+    text-align: center;
+}
+
+.ulHover nav ul:hover .sub{
+    display: block;
+}
+.ulHover nav ul:hover .sub li{
+    display: block;
+}
+.ulHover nav ul:hover .sub li a{
+    display: block;
+    line-height: 30px;
+    color: #fff;
+    font-size: 12px;
+}
+.ulHover aside{
+    height: 393px;
+    border-bottom: 4px solid;
+    position: relative;
+}
+.ulHover aside img{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+/********** .navHover - 메뉴 전체 펼침-1_배경상자 *********/
+.navHover{
+    margin-top: 50px;
+    min-width: 1110px;
+}
+.navHover h2{
+    height: 50px;
+    width: 1110px;
+    margin: 0 auto;
+}
+.navHover nav{
+    width: 100%;
+    /* 생략가능하지만 주 메뉴는 position을 쓰는 경우가 많으므로 설정 권장 */
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #000;
+}
+.navHover nav ul{
+    /* nav의 중앙에 정렬 */
+    height: 40px;
+    width: 1110px;
+    margin: 0 auto;
+    position: relative;
+}
+.navHover nav ul::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+/* .navHover nav ul::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 160px;
+    background-color: rgb(255,0,0,0.5);
+} */
+.navHover nav ul li{
+    float: left;
+    position: relative;
+    width: 120px;
+    text-align: center;
+}
+.navHover nav ul li a{
+    height: 100%;
+    display: block;
+    line-height: 40px;
+    font-size: 16px;
+    color: #000;
+    /* padding-left: 15px; */
+}
+.navHover nav ul li .sub{
+    /* float: left; */
+    width: 100%;
+    height: 160px;
+    z-index: 1;
+    position: absolute;
+    background-color: rgb(255,0,0,0.5);
+}
+.navHover nav ul li .sub li{
+    /* width: 100%; */
+}
+.navHover nav ul li .sub li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.navHover aside{
+    height: 393px;
+    border-bottom: 4px solid;
+    position: relative;
+}
+.navHover aside img{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.navHover .background{
+    display: block;
+    width: 100%;
+    height: 160px;
+    position: absolute;
+    top: 40px;
+    background-color: rgb(255,0,0,0.5);
+    z-index: 1;
+}
+/********** .navHeight - 메뉴 전체 펼침-2_주 메뉴 펼침 *********/
+

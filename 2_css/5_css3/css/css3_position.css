@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#wrap{
+    min-width: 1050px;
+}
+
+header{
+    height: 200px;
+    background-color: #0ff;
+}
+
+section{
+    border-top: 4px solid;
+}
+
+h2{
+    height: 50px;
+}
+
+.sec1{
+    height: 500px;
+    background-image: url(../image/position.png);
+    background-repeat: no-repeat;
+    background-position: 47px 47px;
+}
+
+article{
+    width: 200px;
+    height: 200px;
+    background-color: #333;
+    float: left;
+    margin-left: 50px;
+    color: #fff;
+}
+
+article h3{
+    font-size: 24px;
+}
+
+article h3, article p{
+    text-align: center;
+}
+
+.note{
+    font-size: 11px;
+    margin: 10px 5px 5px 20px;
+}
+.point{
+    font-weight: bold;
+    color:yellow;
+}
+
+.static{
+    position: static;
+}
+.relative{
+    position: relative;
+    left: 20px;
+    top: 20px;
+}
+.absolute{
+    position: absolute;
+    left: 500px;
+    top: 20px;
+}
+.fixed{
+    position: fixed;
+    left: 750px;
+    top: 20px;
+}
+
+/*** 하위 absolute ***/
+aside{
+    width: 100%;
+    height: 100%;
+    background-color: #faa;
+    position: absolute;
+    left: 10;
+    top: 190;
+}
+
+
+.sec2{
+    height: 300px;
+}
+nav{
+    height: 100px;
+}
+nav>ul>li{
+    float: left;
+    list-style: none;
+}
+nav a{
+    text-decoration: none;
+    color: #000;
+    font-size: 32px;
+    padding: 0 15px;
+}
+
+/*** border를 이용한 메뉴 경계 표시 ***/
+.border li{
+    border-right: 2px solid red;
+}
+
+/*** position을 이용한 메뉴 경계 표시 ***/
+.position li{
+    position: relative;
+    /* span의 기준 */
+}
+
+.position li span{
+    position: absolute;
+    /* 블록요소처럼 크기설정 가능 */
+    /* absolute 설정 후 위치 자정 전까지는 현재 위치 */
+    width: 10px;
+    height: 10px;
+    background-color: blue;
+    right: -5px;
+    top: 20px;
+}
+
+
+footer{
+    height: 1000px;
+    background-color: #0ff;
+}

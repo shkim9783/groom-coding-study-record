@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/css3_transform&transition.css">
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <h1>css 속성</h1>
+            <section>
+                <h2>transform & transition</h2>
+                <p>transform은 변형 / transition은 과정</p>
+                <article>
+                    <h3>transform 속성</h3>
+                <div class="translate">
+                    <h4>translate</h4>
+                    <div class="point">현재 위치 기준 / 이동</div>
+                    <div class="note">
+                        <li>transform: translate(X값, Y값);</li>
+                        <li>transform: translateX() translateY(); 둘로 나우어 사용 가능</li>
+                        <li>마이너스(-) 값 사용 가능</li>
+                    </div>
+                </div>
+                <div class="rotate">
+                    <h4>rotate</h4>
+                    <div class="point">중심 기준 / 시계방향 회전</div>                                                   
+                    <div class="note">
+                        <li>transform: rotate(수치deg);</li>
+                        <li>deg(degree) 단위 사용</li>
+                        <li>마이너스(-) 값 사용 가능</li>
+                    </div>
+                </div>
+                <div class="scale">
+                    <h4>scale</h4>
+                    <div class="point">중심 기준 / 확대, 축소</div>
+                    <div class="note">
+                        <li>transform: scale(배수); 혹은<br>transform: scale(X배수,Y배수);</li>
+                        <li>transform: scaleX() scaleY(); 둘로 나누어 쓸 수 있음</li>
+                        <li>기준은 1(==100%)</li>
+                        <li>마이너스(-) 값 사용 가능</li>
+                    </div>
+                </div>
+                <div class="skew">
+                    <h4>skew</h4>
+                    <div class="point">중심 기준 / 기울어짐</div>
+                    <div class="note">
+                        <li>transform: skew(X값,Y값);<br>- 값을 하나만 입력하면 X값으로 인식</li>
+                        <li>transform: skewX() skewY(); 둘로 나누어 사용 가능</li>
+                        <li>deg(degree) 단위 사용</li>
+                        <li>마이너스(-) 값 사용 가능</li>
+                    </div>
+                </div>
+                </article>
+                <article>
+                    <h3>position과 transform을 이용한 블록요소의 중앙 정렬</h3>
+            </article>
+            </section>
+        </header>
+    </div>
+</body>
+</html> 

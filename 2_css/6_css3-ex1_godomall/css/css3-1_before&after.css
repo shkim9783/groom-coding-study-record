@@ -1,0 +1,115 @@
+/* 브라우저 초기화 생략 */
+
+article {
+  margin-top: 50px;
+}
+
+ul, li{
+  list-style: none;
+}
+
+
+
+
+/********* 구조 가상 클래스 선택자 *********/
+
+.child li:nth-child(n) {
+  color: aqua;
+}
+
+.child li {
+  color: orange;
+  /* 구조 가상 클래스의 우선순위 더 높음 */
+}
+
+.child li:nth-child(2) {
+  color: #0f0
+}
+
+/* 첫 번째 li 빨간색, 세 번째 li 파란색 */
+.child li:first-child {
+  color:red;
+}
+
+.child li:last-child {
+  color:blue
+}
+
+
+
+
+
+
+/********* 가상 요소 선택자 *********/
+/*** .before, .after 공통 설정 ***/
+nav {
+  width: 900px;
+  background-color: #ccc;
+  margin-bottom: 30px;
+  overflow: hidden;
+  /* 넘치는 요소: 숨김(기본설정은 스크롤) */
+  /* 영역의 크기(높이) 자동 계산 */
+}
+
+.point{
+  position: relative;
+}
+
+
+.point::before{
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 30px;
+  background-color: red;
+  /* top: 0;
+  left: 0; */
+}
+
+
+.point::after{
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 30px;
+  background-color: blue;
+  /* top: 0;
+  left: 0; */
+}
+
+
+/*** .before - a태그 앞에 ***/
+.before{
+
+}
+
+.before li{
+  display: inline-block;
+  padding: 0 15px;
+  position: relative;
+}
+.before li:first-child{
+  padding-left: 0;
+}
+
+.before li a{
+  font-size: 32px;
+  color: #000;
+  text-decoration: none;
+}
+
+.before li::before{
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  top: 10px;
+  right: -5px;
+}
+.before li:last-child::before{
+  content: none;
+}
+
+
+/*** .after - a태그 뒤에 ***/

@@ -5,47 +5,122 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Publishing</title>
+
+    <style>
+        section {
+            margin-top: 50px;
+            line-height: 2;
+        }
+
+        ol {
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style: none;
+            font-size: 80%;
+        }
+
+        a:any-link {
+            text-decoration: none;
+            color: #999;
+        }
+
+        a:hover {
+            color: #000
+        }
+
+        .note {
+            color: #000;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Web Publishing</h1>
-    <h2>1_HTML</h2>
-    <ol>
-        <li>기본 문법
-            <ol>
-                <li><a href="/1_html/1-1_syntax.html">기본 문법</a></li>
-                <li><a href="/1_html/1-2_block&inline.html">블록요소와 인라인요소</a></li>
-                <li><a href="/1_html/1-3_character.html">문자와 단락</a></li>
-                <li><a href="/1_html/1-4_list.html">목록</a></li>
-            </ol>
-        </li>
-        <li>테이블
-            <ol>
-                <li><a href="/1_html/2-1_table_basic.html">테이블_기본</a></li>
-                <li><a href="/1_html/2-2_table_td.html">테이블_td</a></li>
-                <li><a href="/1_html/2-3_table_th.html">테이블_th</a></li>
-                <li><a href="/1_html/2-4_table_webStandards.html">테이블_웹표준</a></li>
-                <li><a href="/1_html/2-5_table_ex.html">테이블_연습</a></li>
-            </ol>
-        </li>
 
-        <li>form
+    <header>
+        <h1>Web Publishing</h1>
+    </header>
+    <main role="main">
+        <section>
+            <h2>1_HTML</h2>
             <ol>
-                <li><a href="/1_html/3_form_input_type.html"></a>form_input의 속성</li>
-                <li><a href="/1_html/3-1_form_input.html"></a>form_input</li>
-                <li><a href="/1_html/3-2_form_textarea+select.html"></a>form_textarea+select</li>
-                <li><a href="/1_html/3-3_form_label.html"></a>form_label</li>
-            </ol>
-        </li>
-        <li>그룹핑
-            <ol>
-                <li><a href="/1_html/4-2_div.html"></a>div와 span</li>
-                <li><a href="/1_html/4-3_div+css.html"></a>div구조</li>
-                <li><a href="/1_html/4-4_div&span.html"></a>div+css</li>
+                <li>기본 문법
+                    <ol>
+                        <li><a href="/1_html/1-1_syntax.html">기본 문법</a></li>
+                        <li><a href="/1_html/1-2_block&inline.html">블록요소와 인라인요소</a></li>
+                        <li><a href="/1_html/1-3_character.html">문자와 단락</a></li>
+                        <li><a href="/1_html/1-4_list.html">목록</a></li>
+                    </ol>
+                </li>
+                <li>테이블
+                    <ol>
+                        <li><a href="/1_html/2-1_table_basic.html">테이블_기본</a></li>
+                        <li><a href="/1_html/2-2_table_td.html">테이블_td</a></li>
+                        <li><a href="/1_html/2-3_table_th.html">테이블_th</a></li>
+                        <li><a href="/1_html/2-4_table_webStandards.html">테이블_웹표준</a></li>
+                        <li><a href="/1_html/2-5_table_ex.html">테이블_연습</a></li>
+                    </ol>
+                </li>
 
+                <li>form
+                    <ol>
+                        <li><a href="/1_html/3_form_input_type.html">form_input의 속성</a></li>
+                        <li><a href="/1_html/3-1_form_input.html">form_input</a></li>
+                        <li><a href="/1_html/3-2_form_textarea+select.html">form_textarea+select</a></li>
+                        <li><a href="/1_html/3-3_form_label.html">form_label</a></li>
+                    </ol>
+                </li>
+                <li>그룹핑
+                    <ol>
+                        <li><a href="/1_html/4-2_div.html">div와 span</a></li>
+                        <li><a href="/1_html/4-3_div+css.html">div구조</a></li>
+                        <li><a href="/1_html/4-4_div&span.html">div+css</a></li>
+                    </ol>
+                </li>
             </ol>
-        </li>
-    </ol>
+        </section>
+        <section>
+            <h2>2_CSS</h2>
+            <ol>
+                <li>HTML+CSS 입력방법
+                    <ol>
+                        <li><a href="./2_css/1_html+css/html+css.html" target="_blank">html+css_입력방법</a></li>
+                    </ol>
+                </li>
+                <li>HTML+CSS 구조실습
+                    <ol>
+                        <li><a href="./2_css/2_html+css_ex/div_ex-1.html"> 구조실습1</a></li>
+                        <li><a href="./2_css/2_html+css_ex/div_ex-2.html"> 구조실습2</a></li>
+                    </ol>
+                </li>
+                <li>CSS_예제1_센트럴짐
+                    <ol>
+                        <li><a href="./2_css/3_css-ex1_centralgrym/centralgym_color.html" target="_blank">센트럴짐_면분할</a>
+                        </li>
+                        <li><a href="" target="_blank">센트럴짐_이미지연결 <span class="note">(가상클래스 선택자)</span></a></li>
+                        <li><a href="./2_css/3_css-ex1_centralgrym/centralgym_image.html" target="_blank">센트럴짐_종합</a>
+                        </li>
+
+                    </ol>
+                </li>
+                <li>CSS_예제2_고도몰
+                    <ol>
+                        <li><a href="./2_css/4_css-ex2_godomall/index.html" target="_blank">고도몰</a></li>
+                        <li><a href="./2_css/4_css-ex2_godomall/godomall_html5.html" target="_blank">고도몰_시멘틱테그 <span
+                                    class="note">(시멘틱테그)</span></a></li>
+                    </ol>
+                </li>
+                <li>CSS3_속성</li>
+                <li>CSS3_예제1_고도몰</li>
+                <li>CSS3_예제2_카페24</li>
+                <li>HTML+CSS_기타</li>
+            </ol>
+        </section>
+    </main>
+    <footer>
+        <small>@holyhye</small>
+    </footer>
 </body>
 
 </html>

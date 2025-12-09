@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  width: 1110px;
+  margin: 20px auto;
+}
+
+article {
+  width: 1110px;
+  margin: 0 auto;
+}
+
+h3 {
+  height: 30px;
+  font-weight: normal;
+}
+
+article>ul {
+  list-style: none;
+}
+
+article>ul>li {
+  float: left;
+  position: relative;
+  /* .textBox의 기준 */
+  overflow: hidden;
+}
+
+
+/*** odd는 홀수, even은 짝수 ***/
+article>ul>li:nth-child(odd) {
+  margin-right: 16px;
+}
+
+article>ul>li:nth-child(2) {
+  margin-right: 17px;
+}
+
+article>ul>li>img {
+  vertical-align: top;
+  /* 기본 행간(여백) 제거 */
+}
+
+
+/****** 슬라이드 버튼 ******/
+.textBox {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  /* rgba(Red,Green,Blue,opAcity) */
+  padding: 20px;
+  box-sizing: border-box;
+  /* 상자크기:보더포함(패딩은 보더 안쪽)  */
+}
+
+.textBox h4,
+.textBox p {
+  text-align: center;
+}
+
+.textBox h4,
+.textBox span {
+  font-size: 12px;
+}
+
+.textBox p:nth-child(2) {
+  font-size: 24px;
+  font-weight: bold;
+  height: 50px;
+}
+
+.textBox a {
+  text-decoration: none;
+  color: #ddd;
+}
+
+.textBox a:hover {
+  color: #fff;
+}
+
+/* 
+.textBox의 부모요소인 li에 마우스를 올리면
+- .textBox의 위치가 img와 (부드럽게) 겹쳐지도록
+ */
+
+article > ul > li:hover{
+  .textBox{
+    top: 0;
+  }
+}
+
+.textBox{
+  transition: 0.5s all 0.2s ease-in-out;
+}

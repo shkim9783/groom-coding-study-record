@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    height: 100px;
+    background-color: #aaa;
+    width: 960px;
+    margin: 0 auto;
+}
+
+section{
+    width: 960px;
+    margin: 0 auto;
+}
+
+article{
+    margin-top: 50px;
+}
+
+article:nth-child(3){
+    height: 300px;
+}
+
+/*************  transform 속성  **************/
+
+article:nth-child(3)>div{
+    float: left;
+    width: 200px;
+    height: 200px;
+    background-color: #aaa;
+    margin: 20px;
+
+    /* transition을 가상클래스에만 넣으면 실행할 때문 적용, 복귀할 떄 미적용 */
+    /* transition-delay: 1s; */
+    /* 실행 시작 지연 */
+    /* transition-property: all; */
+    /* 실행 속성 */
+    /* transition-duration: 1s; */
+    /* 실행 시간 */
+    /* transition-timing-function: ease-in-out; */
+
+    transition: 0.5s all 0.2s ease-in-out;
+    /* 한 줄 축약: 지연시간(주로별도표기)속성 실행시간 형식(생략하면 ease)*/
+    /* 형식(시간 제어)은 주로 생략 */
+    /* 지연시간은 주로 생략하거나 별도표 */
+}
+
+h4{
+    text-align: center;
+    font-size: 22px;
+}
+
+.point{
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.note{
+    font-size: 12px;
+    line-height: 1.5;
+    margin: 10px 5px 5px 25px;
+}
+
+.translate:hover{
+    transform: translate(100px, 100px);
+}
+
+.rotate:hover{
+    transform: rotate(45deg);
+}
+
+.scale:hover{
+    transform: scale(1.2);
+}
+
+.skew:hover{
+    transform: skew(0, 15deg);
+}
+
+
+
+
+/*************  position과 transform을 이용한 블록요소의 중앙 정렬  **************/
+
+.box{
+    width: 920px;
+    height: 600px;
+    background-color: #aaa;
+    overflow: hidden;
+    /* 1. 넘치는 요소: 숨김 */
+    /* 1. 을 실행하기 위해 크기(높이) 자동 계산 */
+    /* 1. 을 실행하면서 자녀요소의 영향력을 제한 */
+}
+
+.outBox{
+    width: 300px;
+    height: 200px;
+    background-color: blue;
+    margin: 200px auto;
+    position: relative;
+    /* .inBox의 기준 */
+}
+
+.inBox{
+    min-width: 240px;
+    padding: 150px;
+    border: 4px soild blue;
+    position: absolute;
+    color: #fff;
+    background-color: rgba(0,0,0,0.4);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%)
+}
